@@ -7,16 +7,10 @@ int main()
     map<char, int> hash;
     
     // entry
-    hash['0'] = 6;
-    hash['1'] = 2;
-    hash['2'] = 5;
-    hash['3'] = 5;
-    hash['4'] = 4;
-    hash['5'] = 5;
-    hash['6'] = 6;
-    hash['7'] = 3;
-    hash['8'] = 7;
-    hash['9'] = 6;
+    int arr[10] = {6, 2, 5, 5, 4, 5, 6, 3, 7, 6};
+    for(int i = 0; i < 10; i++) {
+    	hash[i + 48] = arr[i];
+    }
     
     string s;
     cin >> s;
